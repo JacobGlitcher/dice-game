@@ -1,0 +1,141 @@
+body {
+  background-color: #35353f;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.play {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+.play__title {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 70px;
+  color: #45c398;
+  margin-bottom: 18px;
+}
+
+.play__subtitle {
+  font-family: 'Kaushan Script', cursive;
+  color: #45c398;
+  font-size: 16px;
+  margin: 0 auto 21px;
+  max-width: 115px;
+  height: 26px;
+}
+
+.play__click {
+  border: 1px solid #45c398;
+  width: 90px;
+  height: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #45c398;
+  background-color: #35353f;
+  -webkit-transition: color .2s linear, background-color .2s linear;
+  transition: color .2s linear, background-color .2s linear;
+  margin-bottom: 25px;
+}
+
+.play__click:hover {
+  color: #35353f;
+  background-color: #45c398;
+}
+
+.play__dice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.play__player {
+  margin-right: 55px;
+}
+
+.play__player:last-child {
+  margin-right: 0;
+}
+
+.play__player-name {
+  font-family: 'Kaushan Script', cursive;
+  color: #45c398;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.dice {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+}
+
+.dice img {
+  width: 100%;
+  height: 100%;
+}
+
+.shake-dice {
+  -webkit-animation: shake 25ms linear 0s 50 alternate;
+          animation: shake 25ms linear 0s 50 alternate;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .play__title {
+    font-size: 45px;
+  }
+  .play__dice-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .play__player {
+    margin: 0 0 25px;
+  }
+  .play__player:last-child {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
