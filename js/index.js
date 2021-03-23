@@ -32,7 +32,7 @@ function randomizer() {
 
 function inBlock() {
     roll();
-    setTimeout(randomizer, 1250);
+    setTimeout(randomizer, 1000);
 }
 
 document.querySelector(".play__click").addEventListener("click", inBlock);
